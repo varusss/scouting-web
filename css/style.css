@@ -1,19 +1,32 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     margin: 0;
 }
 
+.pageWrapper{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
 a {
     text-decoration: none;
+    color: #224665;
 }
 
-h1 {
-    margin: 0;
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
+/*---------NAVBAR------------*/
 .icon1,
 .icon2,
 .icon3 {
@@ -39,9 +52,18 @@ ul {
 }
 
 .menu-icon {
-    width: 6%;
+    width: 10%;
     height: auto;
     position: relative;
+    padding-left: 7%;
+    padding-top: .5%;
+    padding-bottom: 1%;
+}
+nav h1{
+    width: 60%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 7%;
 }
 
 nav {
@@ -49,10 +71,11 @@ nav {
     height: auto;
     background: white;
     position: fixed;
+    box-shadow: 0px 3px 15px -3px #a1a1a1;
 }
 
 nav:hover {
-    background: gray;
+    background: #e0e0e0;
 }
 
 
@@ -72,59 +95,60 @@ nav:hover .content {
     padding-left: 10%;
 }
 
-.wrapper h1 {
+.pageWrapper h1 {
     padding-top: 4%;
     text-align: center;
 }
 
 .homePageList {
-    width: 50%;
-    margin: 3% 25% 2% 25%;
-    padding-left: 18%;
+    padding-top: 3%;
+    width: 70px;
+    margin: auto;
 }
 
 .homePageList ul li {
     margin-top: 4%;
 }
 
-
+/*----------PAGE 2 -------------*/
 
 .page2 h1 {
-    padding-top: 11%;
+    padding-top: 100px;
     text-align: center;
 }
 
 .page2 h3 {
     margin-top: 4%;
     margin-bottom: 1%;
-    width: 10%;
 }
 
 .inputField {
-    margin-left: 21%;
     width: 60%;
+    margin: auto;
+    padding-top: 4%;
 }
 
 .inputFiled:focus {
     color: darkslategray;
 }
 
-input {
+input[type="text"] {
     width: 100%;
     border: none;
     border-bottom: 1px solid black;
     padding-top: 1%;
 }
 
-input:focus {
+input[type="text"]:focus {
     outline: none;
     border: none;
-    border-bottom: 5px solid blue;
-    transition: .3s ease;
+    border-bottom: 2px solid #101076;
+    transition: .4s;
 }
 
-button {
-    width: 80px;
-    margin-left: 44%;
-    margin-top: 2%;
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    margin-top: 3%;
 }
+
