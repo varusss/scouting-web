@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-.pageWrapper{
+.pageWrapper {
     max-width: 1250px;
     margin: 0 auto;
 }
@@ -18,7 +18,7 @@ a {
     color: #224665;
 }
 
-.flex{
+.flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -27,6 +27,7 @@ a {
 }
 
 /*---------NAVBAR------------*/
+
 .icon1,
 .icon2,
 .icon3 {
@@ -59,7 +60,8 @@ ul {
     padding-top: .5%;
     padding-bottom: 1%;
 }
-nav h1{
+
+nav h1 {
     width: 60%;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -84,15 +86,16 @@ nav:hover .content {
 }
 
 .content li a {
-    color: aqua;
+    color: #000000;
     text-decoration: none;
 }
 
 .content li {
     width: 100%;
     background: #6d75ce;
-    padding: 2%;
+    padding: 1%;
     padding-left: 10%;
+    border: 1px solid white;
 }
 
 .pageWrapper h1 {
@@ -149,6 +152,10 @@ input[type="text"]:focus {
 input[type="submit"] {
     display: block;
     margin: 0 auto;
-    margin-top: 3%;
+    margin-top: 8%;
+    width: 30%;
+    padding: 2% 0 2% 0;
+    background: white;
+    border: 1px solid black;
+    border-radius: 200px;
 }
-
