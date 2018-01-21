@@ -140,6 +140,7 @@ input[type="text"] {
     border: none;
     border-bottom: 1px solid black;
     padding-top: 1%;
+    font-size: 130%;
 }
 
 input[type="text"]:focus {
